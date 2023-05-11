@@ -1,0 +1,312 @@
+{% extends "homepage.html" %} {% load static %} {% block content %}
+
+<!-- Banner Section -->
+<section class="banner-section">
+	<div class="pattern-layer" style="background-image: url({% static 'banner_image/banner.jpg' %})"></div>
+	<div class="auto-container">
+		<!-- Content Boxed -->
+		<div class="content-boxed">
+			<div class="inner-column"> </div>
+			<h1> GEEKS - КУРСЫ ПРОГРАММИРОВАНИЯ
+						В КЫРГЫЗСТАНЕ</h1>
+			<h6> С нуля до гарантированной стажировки в нашей IT-студии за 7 месяцев!
+							Оставьте заявку и получите бесплатный пробный урок </h6> </h1>
+			</p>
+			<div class="buttons-box"> <a style="background-color:rgb(161, 161, 14) ;" href="{% url 'order' %}" class="theme-btn btn-style-two"><span   class="txt">Начать обучение  <i class="fa fa-angle-right"></i></span></a> </div>
+		</div>
+	</div>
+	<!-- Image Boxed -->
+	<div class="image tilt" data-tilt data-tilt-max="4">
+				<a href="{% static 'banner_image/banner.jpg' %}" data-fancybox="banner" data-caption="" class=""></a>
+			</div>
+	</div>
+</section>
+<!-- End Banner Section -->
+<!-- Education Section -->
+<section class="education-section">
+	<div class="auto-container">
+		<div class="row clearfix">
+			<!-- Image Column -->
+			<div class="image-column col-lg-6 col-md-12 col-sm-12">
+				<div class="inner-column parallax-scene-1">
+					<div class="image parallax-layer" data-depth="0.40"> <img src="{% static 'media/research_image/banner.png.jpg' %}" alt="" /> </div>
+				</div>
+			</div>
+			<!-- Content Column -->
+			<div class="content-column col-lg-6 col-md-12 col-sm-12">
+				<div class="inner-column">
+					<h2>О НАС <br> 	</h2>
+					<div class="text">Курсы IT-профессий Geeks были основаны в 2018-ом году в Бишкеке с целью дать возможность каждому человеку, даже без опыта в технологиях, гарантированно освоить IT-профессию.</div> </div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Education Section -->
+<!-- Courses Section -->
+<section class="courses-section">
+	<div class="auto-container">
+		<div class="row clearfix">
+			<!-- Title Column -->
+			<div class="title-column col-lg-4 col-md-12 col-sm-12">
+				<div class="inner-column">
+					<!-- Sec Title -->
+					<div class="sec-title">
+						<h2>Наши курсы</h2>
+						<div class="text">Обучаем с нуля самым актуальным профессиям, востребованным по всему миру.</div>
+					</div> </div>
+			</div>
+			<!-- Cource Block -->
+			<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<a href="{% url 'order' %}"><img src="{% static 'images/resource/backend.jpg' %}" alt="" /></a>
+					</div>
+					<div class="lower-content">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h5><a href="{% url 'order' %}">Frontend-разработчик (HTML, CSS, JavaScript)</a></h5> </div>
+							<div class="pull-right">
+								<div class="price"></div>
+							</div>
+						</div>
+						<div class="text">Художник и инженер в одном лице. Вы когда-нибудь задумывались почему на сайте или в приложении элементы интерфейса находятся именно там, где они находятся, и вообще, как и почему они работают? На эти вопросы отвечает «фронтэнд»-разработчик; именно он продумывает и воплощает всю визуальную интерактивную часть для рядовых пользователей, как мы.</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<div class="students"></div>
+							</div>
+							<div class="pull-right"> <a href="{% url 'order' %}" class="enroll">Записаться</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cource Block -->
+			<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<a href="{% url 'order' %}"><img src="{% static 'images/resource/frontend.png' %}" alt="" /></a>
+					</div>
+					<div class="lower-content">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h5><a href="{% url 'order' %}">Backend-разработчик (Python, Django)</a></h5> </div>
+							<div class="pull-right">
+								<div class="price"></div>
+							</div>
+						</div>
+						<div class="text">Специалист, который отвечает за построение логики для воплощения любой идеи. Он собирает фундамент и опорную систему для проекта – от простого сайта для магазина одежды до сложных вычислительных систем и нейронных сетей.</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<div class="students"></div>
+							</div>
+							<div class="pull-right"> <a href="{% url 'order' %}" class="enroll">Записаться</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cource Block -->
+			<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<a href="{% url 'order' %}"><img src="{% static 'images/resource/fullstack.jpg' %}" alt="" /></a>
+					</div>
+					<div class="lower-content">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h5><a href="{% url 'order' %}">Fullstack-разработчик (Frontend + Backend)</a></h5> </div>
+							<div class="pull-right">
+								<div class="price"></div>
+							</div>
+						</div>
+						<div class="text">Настоящий человек-оркестр. Он совмещает в себе навыки и Backend, и Frontend-разработчика.
+							Способен написать код программы
+							и сделать так, чтобы этой программой было
+							удобно пользоваться.
+							Безусловно, специалисты с этими
+							навыками глубоко ценятся
+							на рынке труда.</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<div class="students"></div>
+							</div>
+							<div class="pull-right"> <a href="{% url 'order' %}" class="enroll">Записаться</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cource Block -->
+			<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<a href="{% url 'order' %}"><img src="{% static 'images/resource/android.jpg' %}" alt="" /></a>
+					</div>
+					<div class="lower-content">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h5><a href="{% url 'order' %}">Android-разработчик (Java, Kotlin) / iOS-разработчик (SWIFT)</a></h5> </div>
+							<div class="pull-right">
+								<div class="price"></div>
+							</div>
+						</div>
+						<div class="text">Благодаря Android/iOS-разработчикам,
+							у нас есть возможность пользоваться удобными приложениями и мобильными играми.
+							Разумеется, это одна из передовых
+							специальностей в эпоху, когда
+							смартфоны надолго стали частью нашей повседневной жизни.</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<div class="students"></div>
+							</div>
+							<div class="pull-right"> <a href="{% url 'order' %}" class="enroll">Записаться</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cource Block -->
+			<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<a href="{% url 'order' %}"><img src="{% static 'images/resource/bop.jpg' %}" alt="" /></a>
+					</div>
+					<div class="lower-content">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h5><a href="{% url 'order' %}">Основы
+									программирования</a></h5> </div>
+							<div class="pull-right">
+								<div class="price"></div>
+							</div>
+						</div>
+						<div class="text">Основы программирования - это отличная возможность провести время
+							с пользой и освоить азы программирования!
+							Всего за 4 недели интенсивных
+							занятий вы сможете построить фундамент для дальнейшего развития в индустрии IT.
+							</div>
+						<div class="clearfix">
+							<div class="pull-left">
+							
+							</div>
+							<div class="pull-right"> <a href="{% url 'order' %}" class="enroll">Записаться</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cource Block -->
+			<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<a href="{% url 'order' %}"><img src="{% static 'images/resource/uxui.jpg' %}" alt="" /></a>
+					</div>
+					<div class="lower-content">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h5><a href="{% url 'order' %}">UX/UI-дизайнер
+									<br>(FIGMA)</a></h5> </div>
+							<div class="pull-right">
+								<div class="price"></div>
+							</div>
+						</div>
+						<div class="text">Креативный специалист, который
+							придумывает дизайн и интерфейс продукта. Специалист UX/UI отвечает за подбор форм,
+							цветов, функциональности дизайна и
+							прочих важных параметров для комфортного использования продукта (например, сайта, сервиса или приложения).
+							</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<div class="students"></div>
+							</div>
+							<div class="pull-right"> <a href="{% url 'order' %}" class="enroll">Записаться</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Courses Section -->
+<!-- Video Section -->
+<section class="video-section" style="background-image: url({% static 'images/background/background_video.jpeg' %})">
+	<div class="auto-container"> <a href="https://https://www.youtube.com/watch?v=AOw0475dyK8&t=5s"  class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
+		<h4>Посмотреть отзыв о GEEKS</h4> </div>
+</section>
+<!-- End Video Section -->
+<!-- Achievement Section -->
+<section class="achievements-section">
+	<div class="auto-container">
+		<!-- Sec Title -->
+		<div class="sec-title centered">
+			<h2>Geeks в цифрах</h2>
+			<div class="text">Почему стоит задуматься о карьере в IT сфере?</div>
+		</div>
+		<!-- Fact Counter -->
+		<div class="fact-counter">
+			<div class="row clearfix">
+				<!-- Column -->
+				<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box"> <span class="icon flaticon-course"></span> </div>
+							<h4 class="counter-title">Всего выпускников</h4>
+							<div class="count-outer count-box"> <span class="count-text" data-speed="2000" data-stop="800">0</span> </div>
+						</div>
+					</div>
+				</div>
+				<!-- Column -->
+				<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box"> <span class="icon flaticon-course-1"></span> </div>
+							<h4 class="counter-title">Всего студентов</h4>
+							<div class="count-outer count-box alternate"> <span class="count-text" data-speed="3000" data-stop="1200">0</span> </div>
+						</div>
+					</div>
+				</div>
+				<!-- Column -->
+				<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box"> <span class="icon flaticon-world"></span> </div>
+							<h4 class="counter-title">Сфера работы</h4>
+							<div class="count-outer count-box"> <span class="count-text" data-speed="3000" data-stop="50">0</span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Achievement Section -->
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+	<div class="auto-container">
+		<!-- Sec Title -->
+		<div class="sec-title centered">
+			<h2>Где работают наши выпускники</h2> </div>
+		<!-- Authors Box -->
+		<div class="authors-box">
+			<div class="author-one"><img src="{% static 'images/resource/image1.png' %}" alt="" /></div>
+			<div class="author-two"><img src="{% static 'images/resource/image2.png' %}" alt="" /></div>
+			<div class="author-three"><img src="{% static 'images/resource/image4.png' %}" alt="" /></div>
+			<div class="author-four"><img src="{% static 'images/resource/image5.png' %}" alt="" /></div>
+			<div class="author-five"><img src="{% static 'images/resource/image6.png' %}" alt="" /></div>
+			<div class="author-six"><img src="{% static 'images/resource/image7.png' %}" alt="" /></div>
+			<div class="author-seven"><img src="{% static 'images/resource/image8.png' %}" alt="" /></div>
+			<div class="author-eight"><img src="{% static 'images/resource/image9.png' %}" alt="" /></div>
+		</div>
+		<div class="single-item-carousel owl-carousel owl-theme">
+			<!-- Testimonial Block Two -->
+			<div class="testimonial-block">
+				<div class="inner-box">
+					<div class="image-box">
+						<div class="quote-icon flaticon-quote-5"></div>
+						<div class="image"> <img src="{% static 'images/resource/image3.png' %}" alt="" /> </div>
+					</div>
+					<div class="text">Наши выпускники трудятся в передовых компаниях Кыргызстана и СНГ, таких как:</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- End Testimonial Section -->
+{% endblock %}
